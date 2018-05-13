@@ -1,0 +1,57 @@
+{
+  "name": "dispatch-hijack",
+  "description": "Side effect functions for dispatch",
+  "version": "0.0.0-development",
+  "author": "Zachary Sierakowski",
+  "license": "MIT",
+  "keywords": ["dispatch-hijack", "redux", "sideeffect"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zachary-sierakowski/dispatch-hijack.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": ["lib"],
+  "main": "lib",
+  "scripts": {
+    "build": "webpack --progress --profile --colors",
+    "prettier": "prettier --write 'src/**/*.js'",
+    "cz": "git-cz",
+    "precommit": "lint-staged",
+    "commitmsg": "validate-commit-msg",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "lint-staged": {
+    "*.js": ["prettier --write", "git add"]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "validate-commit-msg": {
+      "helpMessage": "\nPlease use `yarn cz` to commit your changes"
+    }
+  },
+  "peerDependencies": {
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "@babel/preset-react": "^7.0.0-beta.46",
+    "babel-loader": "^8.0.0-beta",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.0",
+    "prettier": "^1.12.1",
+    "redux": "^4.0.0",
+    "semantic-release": "^15.4.0",
+    "travis-deploy-once": "^5.0.0",
+    "validate-commit-msg": "^2.14.0",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3"
+  }
+}
