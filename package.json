@@ -4,7 +4,11 @@
   "version": "0.0.0-development",
   "author": "Zachary Sierakowski",
   "license": "MIT",
-  "keywords": ["dispatch-hijack", "redux", "sideeffect"],
+  "keywords": [
+    "dispatch-hijack",
+    "redux",
+    "sideeffect"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/zachary-sierakowski/dispatch-hijack.git"
@@ -12,7 +16,9 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "main": "lib",
   "scripts": {
     "build": "webpack --progress --profile --colors",
@@ -24,7 +30,10 @@
     "travis-deploy-once": "travis-deploy-once"
   },
   "lint-staged": {
-    "*.js": ["prettier --write", "git add"]
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "config": {
     "commitizen": {
@@ -48,7 +57,7 @@
     "lint-staged": "^7.1.0",
     "prettier": "^1.12.1",
     "redux": "^4.0.0",
-    "semantic-release": "^15.4.0",
+    "semantic-release": "^15.4.1",
     "travis-deploy-once": "^5.0.0",
     "validate-commit-msg": "^2.14.0",
     "webpack": "^4.8.1",

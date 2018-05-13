@@ -16,6 +16,7 @@ const hijackMiddleware = (fn = defaultFn, opts = defaultHijackOptions) => {
     if (hijackAll) {
       return next(fn(plainAction, dispatch, getState));
     }
+
     if (!hijackField) {
       return next(action);
     }
