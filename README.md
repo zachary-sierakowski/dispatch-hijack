@@ -11,10 +11,15 @@ Add `hijackMiddleware` to the store:
 ```javascript
 import hijackMiddleware from "dispatch-hijack";
 
+const hijackFunction = (action, dispatch, getState) => {
+  console.log("I'm hijacked!");
+  return action;
+};
+
 const store = createStore(
   rootReducer,
   initialState,
-  compose(applyMiddleware([hijackMiddleware(), ...middleware]))
+  compose(applyMiddleware([hijackMiddleware(hijackFunction), ...middleware]))
 );
 ```
 
