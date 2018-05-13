@@ -1,13 +1,17 @@
 {
   "name": "dispatch-hijack",
-  "description": "Side effect functions for dispatch",
+  "description":
+    "Hijack dispatched actions before they reach reducers -- without writing middleware",
   "version": "0.0.0-development",
   "author": "Zachary Sierakowski",
   "license": "MIT",
   "keywords": [
     "dispatch-hijack",
     "redux",
-    "sideeffect"
+    "sideeffect",
+    "hijack",
+    "middleware",
+    "actions"
   ],
   "repository": {
     "type": "git",
@@ -16,9 +20,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "main": "lib",
   "scripts": {
     "build": "webpack --progress --profile --colors",
@@ -30,10 +32,7 @@
     "travis-deploy-once": "travis-deploy-once"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": ["prettier --write", "git add"]
   },
   "config": {
     "commitizen": {
