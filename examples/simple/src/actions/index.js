@@ -4,7 +4,10 @@ export const addTodo = text => ({
   type: "ADD_TODO",
   id: nextTodoId++,
   text,
-  hijack: true
+  hijack: action => {
+    console.log("hijacked");
+    return action;
+  }
 });
 
 export const setVisibilityFilter = filter => ({
