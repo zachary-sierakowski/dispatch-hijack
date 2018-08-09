@@ -2,7 +2,7 @@
 
 Dispatch Hijack [middleware](http://redux.js.org/docs/advanced/Middleware.html) allows you to write redux side effects on a per-action basis.
 
-[![Build Status](https://travis-ci.org/zachary-sierakowski/dispatch-hijack.svg?branch=master)](https://travis-ci.org/zachary-sierakowski/dispatch-hijack)
+[![Build Status](https://travis-ci.org/zacharysierakowski/dispatch-hijack.svg?branch=master)](https://travis-ci.org/zachary-sierakowski/dispatch-hijack)
 [![npm version](https://badge.fury.io/js/dispatch-hijack.svg)](https://badge.fury.io/js/dispatch-hijack)
 [![semantic-release](https://img.shields.io/badge/%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
